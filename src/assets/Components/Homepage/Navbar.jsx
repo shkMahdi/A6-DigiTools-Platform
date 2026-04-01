@@ -1,9 +1,9 @@
 const Navbar = () => {
     return (
-        <div className="w-[95%] md:max-w-300 mx-auto">
+        <div className="w-[95%] md:max-w-300 mx-auto mb-20">
             <div className="navbar bg-base-100 shadow-sm">
                 <div className="flex-1">
-                    <a className="text-2xl text-[#4f39f6] font-bold">DigiTools</a>
+                    <a className="text-2xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</a>
                 </div>
 
                 <div className="flex gap-2">
@@ -27,7 +27,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div>
-                        <button className="btn btn-primary btn-sm md:btn-md rounded-3xl">Get Started</button>
+                        <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-sm md:btn-md rounded-3xl">Get Started</button>
                     </div>
                 </div>
             </div>

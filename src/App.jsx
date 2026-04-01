@@ -1,4 +1,5 @@
 import './App.css'
+import Banner from './assets/Components/Homepage/Banner'
 import Navbar from './assets/Components/Homepage/Navbar'
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
           <Navbar></Navbar>
         </nav>
         <section>
-            
+            <Banner></Banner>
         </section>
       </header>
     </>

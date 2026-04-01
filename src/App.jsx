@@ -8,7 +8,7 @@ import Stat from './assets/Components/Homepage/Stat'
 import Steps from './assets/Components/Homepage/Steps';
 import Pricing from './assets/Components/Homepage/Pricing';
 import Workflow from './assets/Components/Homepage/Workflow';
-
+import Footer from './assets/Components/Homepage/Footer'
 const productPromise = async () => {
   const res = await fetch('/data.json');
   return res.json();
@@ -48,6 +48,10 @@ function App() {
           <Workflow></Workflow>
         </section>
       </main>
+
+      <footer>
+        <Footer></Footer>
+      </footer>
     </>
   )
 }

@@ -6,7 +6,7 @@ const Steps = () => {
         <div className='w-[95%] md:max-w-300 mx-auto mb-20'>
             <div className='text-center space-y-3 mb-5'>
                 <p className='text-5xl font-bold'>Get Started in 3 Steps</p>
-                <p className='text-gray-500'>Start using premium digital tools in minutes, not hours.</p>
+                <p className='text-gray-500 text-sm'>Start using premium digital tools in minutes, not hours.</p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
                 <div className='border border-gray-300 rounded-3xl p-5'>

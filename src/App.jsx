@@ -6,6 +6,7 @@ import Navbar from './assets/Components/Homepage/Navbar'
 import ProductGallary from './assets/Components/Homepage/ProductGallary'
 import Stat from './assets/Components/Homepage/Stat'
 import Steps from './assets/Components/Homepage/Steps';
+import Pricing from './assets/Components/Homepage/Pricing';
 
 const productPromise = async () => {
   const res = await fetch('/data.json');
@@ -36,6 +37,10 @@ function App() {
 
         <section>
            <Steps></Steps>
+        </section>
+
+        <section>
+          <Pricing></Pricing>
         </section>
       </main>
     </>

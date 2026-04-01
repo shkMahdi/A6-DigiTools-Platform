@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality articles, blogs, and social media content using advanced AI.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Unlimited content generation", "SEO optimization", "Multiple writing tones"],
+    "icon": "✒️"
+  },
+  {
+    "id": 2,
+    "name": "Premium Stock Assets",
+    "description": "Access thousands of high-quality stock images, videos, and graphics.",
+    "price": 49,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["10,000+ assets", "Royalty-free license", "Weekly updates"],
+    "icon": "📷"
+  },
+  {
+    "id": 3,
+    "name": "Resume Builder AI",
+    "description": "Create professional resumes with AI-powered suggestions and templates.",
+    "price": 9,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "📄"
+  },
+  {
+    "id": 4,
+    "name": "Logo Maker Studio",
+    "description": "Design stunning logos in minutes using AI tools.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["500+ logo templates", "Custom fonts", "High-resolution export"],
+    "icon": "🎨"
+  },
+  {
+    "id": 5,
+    "name": "Social Media Scheduler",
+    "description": "Plan, schedule, and automate your social media posts.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Multi-platform support", "Post analytics", "Auto scheduling"],
+    "icon": "📅"
+  },
+  {
+    "id": 6,
+    "name": "AI Thumbnail Generator",
+    "description": "Create eye-catching thumbnails for YouTube and social media.",
+    "price": 7,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Drag & drop editor", "Custom templates", "Instant download"],
+    "icon": "🖼️"
+  },
+  {
+    "id": 7,
+    "name": "Website UI Kit",
+    "description": "Pre-designed UI components and layouts for modern websites.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["200+ components", "Figma & HTML support", "Responsive design"],
+    "icon": "💻"
+  },
+  {
+    "id": 8,
+    "name": "AI Code Assistant",
+    "description": "Boost your coding productivity with AI-generated code suggestions.",
+    "price": 20,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Multi-language support", "Auto debugging", "Code explanation"],
+    "icon": "🤖"
+  },
+  {
+    "id": 9,
+    "name": "Presentation Maker Pro",
+    "description": "Create stunning presentations with smart templates and AI.",
+    "price": 14,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["50+ templates", "AI slide suggestions", "Export to PPT/PDF"],
+    "icon": "📊"
+  },
+  {
+    "id": 10,
+    "name": "Email Marketing Toolkit",
+    "description": "Design, automate, and analyze email campaigns easily.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Email templates", "Automation workflows", "Analytics dashboard"],
+    "icon": "📧"
+  }
+]

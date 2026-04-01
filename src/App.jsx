@@ -1,10 +1,18 @@
 import './App.css'
+import Navbar from './assets/Components/Homepage/Navbar'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-2xl text-red-500'>Lets get started</h1>
+      <header>
+        <nav>
+          <Navbar></Navbar>
+        </nav>
+        <section>
+            
+        </section>
+      </header>
     </>
   )
 }

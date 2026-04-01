@@ -10,11 +10,17 @@ const ProductCard = ({ product, selected, setSelected }) => {
         setSelected([...selected, product]);
     }
     return (
-        <div className='border-2 border-gray-300 rounded-2xl p-2 space-y-2'>
+        <div className='border-2 border-gray-300 rounded-3xl px-4 py-3 space-y-2'>
             <div className='flex justify-end'>
-                <p className='bg-amber-400 px-2 py-1 rounded-3xl w-fit'>
-                    best seller
-                </p>
+                {
+                    product.tag === "popular" ? (
+                        <div className="badge badge-soft badge-primary">Popular</div>
+                    ) : product.tag === "new" ? (
+                        <div className="badge badge-soft badge-success">New</div>
+                    ) : (
+                        <div className="badge badge-soft badge-warning">Best Seller</div>
+                    )
+                }
             </div>
             <div className='flex justify-start p-1 border border-gray-300 rounded-full w-fit items-center'>
                 {product.icon}
@@ -26,14 +32,14 @@ const ProductCard = ({ product, selected, setSelected }) => {
             </div>
             <div>
                 {
-                    product.features.map(feature => (
-                        <p className='flex gap-1 items-center'><FcCheckmark />
+                    product.features.map((feature, index) => (
+                        <p key={index} className='flex gap-1 items-center'><FcCheckmark />
                             {feature}</p>
                     ))
                 }
             </div>
             <div>
-                <button onClick={() => handleSelection()} disabled={isSelected} className={`btn w-full rounded-xl ${isSelected ? "bg-green-500 text-white" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"}`}>
+                <button onClick={() => handleSelection()} disabled={isSelected} className={`btn w-full rounded-3xl ${isSelected ? "bg-green-500 text-white" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"}`}>
                     {isSelected ? <FaCheck /> : ""}{isSelected ? "Added To Cart" : "Buy Now"}
                 </button>
             </div>

@@ -20,9 +20,9 @@ const Banner = () => {
                         <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-sm md:btn-md rounded-3xl">
                             Explore Products
                         </button>
-                        <button className="btn btn-outline btn-primary btn-sm md:btn-md rounded-3xl">
+                        <button className="btn btn-outline btn-primary btn-sm md:btn-md rounded-3xl hover:text-white">
                             <IoPlayOutline />
-                            <span className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>  Watch Demo</span>
+                            <span className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent hover:text-white'>Watch Demo</span>
                         </button>
                     </div>
                 </div>

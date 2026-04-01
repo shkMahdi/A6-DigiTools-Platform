@@ -7,6 +7,7 @@ import ProductGallary from './assets/Components/Homepage/ProductGallary'
 import Stat from './assets/Components/Homepage/Stat'
 import Steps from './assets/Components/Homepage/Steps';
 import Pricing from './assets/Components/Homepage/Pricing';
+import Workflow from './assets/Components/Homepage/Workflow';
 
 const productPromise = async () => {
   const res = await fetch('/data.json');
@@ -41,6 +42,10 @@ function App() {
 
         <section>
           <Pricing></Pricing>
+        </section>
+
+        <section>
+          <Workflow></Workflow>
         </section>
       </main>
     </>

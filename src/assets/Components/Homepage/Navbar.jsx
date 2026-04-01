@@ -14,7 +14,7 @@ const Navbar = ({selected}) => {
                                 <span hidden={selected.length === 0} className="badge badge-sm indicator-item p-1 rounded-full bg-amber-500 text-white">{selected.length}</span>
                             </div>
                         </div>
-                        <div
+                        {/* <div
                             tabIndex={0}
                             className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
                             <div className="card-body">
@@ -24,7 +24,7 @@ const Navbar = ({selected}) => {
                                     <button className="btn btn-primary btn-block">View cart</button>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="flex items-center p-2">
                         <button>Login</button>

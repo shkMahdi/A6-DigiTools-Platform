@@ -1,12 +1,14 @@
 import { ImCart } from "react-icons/im";
 import { FaRegFaceSadTear } from "react-icons/fa6";
 
-const Cart = ({ selected, setSelected }) => {
+const Cart = ({totalPrice, setTotalPrice, selected, setSelected }) => {
     const isEmpty = (selected.length === 0);
 
     const handleRemove = (prod) => {
         setSelected(selected.filter(p => p.name !== prod.name));
+        setTotalPrice(totalPrice - prod.price);
     }
+
 
     const removeAll = () => {
         setSelected([]);
@@ -45,7 +47,7 @@ const Cart = ({ selected, setSelected }) => {
 
                 <div className="flex justify-between px-3 mb-5">
                     <p className="text-gray-500 text-sm">Total: </p>
-                    <p className="text-xl font-bold">$78</p>
+                    <p className="text-xl font-bold">${totalPrice}</p>
                 </div>
 
                 <div>

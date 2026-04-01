@@ -35,7 +35,7 @@ const Steps = () => {
                 </div>
                 <div className='border border-gray-300 rounded-3xl p-5'>
                     <div className='flex justify-end'>
-                        <div className='p-2 w-fit rounded-full bg-purple-600 text-white text-sm'>01</div>
+                        <div className='p-2 w-fit rounded-full bg-purple-600 text-white text-sm'>03</div>
                     </div>
                     <div className='grid grid-cols-1 items-center text-center space-y-3 mb-20'> 
                         <div className='p-2 w-fit rounded-full bg-purple-200 text-white text-sm mx-auto'>

@@ -2,12 +2,16 @@ import React from 'react';
 import { FcCheckmark } from "react-icons/fc";
 import { FaCheck } from "react-icons/fa";
 
-const ProductCard = ({ product, selected, setSelected }) => {
+const ProductCard = ({ product, selected, setSelected, totalPrice, setTotalPrice}) => {
     // console.log(product.name)
     const isSelected = selected.some(p => p.name === product.name);
     const handleSelection = () => {
         alert("Product selected");
         setSelected([...selected, product]);
+    }
+
+    const handleTotalPrice = (p) => {
+        setTotalPrice(totalPrice + p.price);
     }
     return (
         <div className='border-2 border-gray-300 rounded-3xl px-4 py-3 space-y-2'>
@@ -39,7 +43,7 @@ const ProductCard = ({ product, selected, setSelected }) => {
                 }
             </div>
             <div>
-                <button onClick={() => handleSelection()} disabled={isSelected} className={`btn w-full rounded-3xl ${isSelected ? "bg-green-500 text-white" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"}`}>
+                <button onClick={() =>{handleSelection(); handleTotalPrice(product)}} disabled={isSelected} className={`btn w-full rounded-3xl ${isSelected ? "bg-green-500 text-white" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"}`}>
                     {isSelected ? <FaCheck /> : ""}{isSelected ? "Added To Cart" : "Buy Now"}
                 </button>
             </div>

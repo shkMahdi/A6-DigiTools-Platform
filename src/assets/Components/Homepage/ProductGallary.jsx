@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Products from './Products';
 import Cart from './Cart'
 
-const ProductGallary = ({products, selected, setSelected}) => {
+const ProductGallary = ({totalPrice, setTotalPrice, products, selected, setSelected}) => {
     const [tab, setTab] = useState("product");
 
     return (
@@ -26,8 +26,8 @@ const ProductGallary = ({products, selected, setSelected}) => {
             </div>
             {
                 tab === "product" ? 
-                    <Products products={products} selected={selected} setSelected={setSelected}></Products>:
-                    <Cart selected={selected} setSelected={setSelected}/>
+                    <Products products={products} selected={selected} setSelected={setSelected} totalPrice={totalPrice} setTotalPrice={setTotalPrice}></Products>:
+                    <Cart totalPrice={totalPrice} setTotalPrice={setTotalPrice} selected={selected} setSelected={setSelected}/>
             }
         </div>
     );

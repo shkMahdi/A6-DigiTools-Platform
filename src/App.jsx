@@ -17,7 +17,7 @@ const promise = productPromise();
 function App() {
   const products = use(promise);
   const [selected, setSelected] = useState([]);
-
+  const [totalPrice, setTotalPrice] = useState(0);
   return (
     <>
       <header>
@@ -33,7 +33,7 @@ function App() {
       </header>
       <main>
         <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
-          <ProductGallary products={products} selected={selected} setSelected={setSelected}></ProductGallary>
+          <ProductGallary totalPrice={totalPrice} setTotalPrice={setTotalPrice} products={products} selected={selected} setSelected={setSelected}></ProductGallary>
         </Suspense>
 
         <section>

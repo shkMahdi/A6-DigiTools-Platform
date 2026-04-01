@@ -30,7 +30,7 @@ const ProductGallary = ({productPromise}) => {
             {
                 tab === "product" ? 
                     <Products products={products} selected={selected} setSelected={setSelected}></Products>:
-                    <Cart></Cart>
+                    <Cart selected={selected} setSelected={setSelected}/>
             }
         </div>
     );

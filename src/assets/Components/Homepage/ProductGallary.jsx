@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React, { use,useState } from 'react';
+import Products from './Products';
+import Cart from './Cart'
 
-const ProductGallary = () => {
+const ProductGallary = ({productPromise}) => {
+    const products = use(productPromise);
+    // console.log(products);
     const [tab, setTab] = useState("product");
+    const [selected, setSelected] = useState([]);
 
     return (
         <div className='w-[95%] md:max-w-300 mx-auto mb-20'>
-            <div className='grid grid-cols-1 gap-3 justify-center items-center text-center'>
+            <div className='grid grid-cols-1 gap-3 justify-center items-center text-center mb-10'>
                 <p className='text-xl md:text-5xl font-bold'>Premium Digital Tools</p>
                 <p className='text-gray-500'>
                     Choose from our curated collection of premium digital products designedto boost your productivity and creativity.
@@ -22,6 +27,11 @@ const ProductGallary = () => {
                     </button>
                 </div>
             </div>
+            {
+                tab === "product" ? 
+                    <Products products={products} selected={selected} setSelected={setSelected}></Products>:
+                    <Cart></Cart>
+            }
         </div>
     );
 };

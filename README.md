@@ -1,16 +1,24 @@
-# React + Vite
+# DigiTools
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+DigiTools is your all-in-one platform for premium digital tools, AI-powered resources, and productivity software. Whether you're a creator, designer, or business professional, we've got everything you need to work smarter and faster. Access high-quality templates, AI tools, stock assets, and design resources all in one place, so you can focus on what you do best.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technology Stack
 
-## React Compiler
+We built DigiTools using modern web technologies to ensure fast performance and great user experience:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19 - For building our dynamic user interface
+- Vite - Lightning-fast build tool and dev server
+- Tailwind CSS - Utility-first CSS framework for responsive design
+- DaisyUI - Component library built on Tailwind
+- React Icons - Beautiful icon library for UI elements
+- JavaScript (ES6+) - Core language and logic
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Add Products to Cart** - Easily browse through our product gallery and add items to your cart with a single click. Keep track of all your selected products and see the cart count update in real-time.
+
+2. **Remove from Cart** - Change your mind? No problem. Remove items from your cart anytime with just one action. Manage your selections effortlessly before checkout.
+
+3. **Responsive Design** - Whether you're on desktop, tablet, or mobile, DigiTools works perfectly. Our responsive layout adapts seamlessly to any screen size, giving you a smooth shopping experience no matter where you are.

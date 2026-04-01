@@ -1,12 +1,14 @@
 import React from 'react';
 import { FcCheckmark } from "react-icons/fc";
 import { FaCheck } from "react-icons/fa";
+import { toast } from 'react-toastify';
 
 const ProductCard = ({ product, selected, setSelected, totalPrice, setTotalPrice}) => {
     // console.log(product.name)
     const isSelected = selected.some(p => p.name === product.name);
     const handleSelection = () => {
-        alert("Product selected");
+        // alert("Product selected");
+        toast("Product Added Successfully 🎉")
         setSelected([...selected, product]);
     }
 

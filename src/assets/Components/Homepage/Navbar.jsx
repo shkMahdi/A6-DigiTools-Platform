@@ -1,9 +1,19 @@
 const Navbar = ({selected}) => {
     return (
         <div className="w-[95%] md:max-w-300 mx-auto mb-20">
-            <div className="navbar bg-base-100 shadow-sm">
-                <div className="flex-1">
+            <div className="navbar bg-base-100 shadow-sm justify-between">
+                <div>
                     <a className="text-2xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</a>
+                </div>
+
+                <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
+                    <ul className="flex gap-8 text-sm">
+                        <li className="cursor-pointer hover:text-purple-600 transition">Products</li>
+                        <li className="cursor-pointer hover:text-purple-600 transition">Features</li>
+                        <li className="cursor-pointer hover:text-purple-600 transition">Pricing</li>
+                        <li className="cursor-pointer hover:text-purple-600 transition">Testimonials</li>
+                        <li className="cursor-pointer hover:text-purple-600 transition">FAQ</li>
+                    </ul>
                 </div>
 
                 <div className="flex gap-2">

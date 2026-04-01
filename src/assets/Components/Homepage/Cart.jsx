@@ -1,5 +1,4 @@
 import { ImCart } from "react-icons/im";
-import { FaRegFaceSadTear } from "react-icons/fa6";
 
 const Cart = ({totalPrice, setTotalPrice, selected, setSelected }) => {
     const isEmpty = (selected.length === 0);

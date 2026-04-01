@@ -1,12 +1,9 @@
-import React, { use,useState } from 'react';
+import React, { useState } from 'react';
 import Products from './Products';
 import Cart from './Cart'
 
-const ProductGallary = ({productPromise}) => {
-    const products = use(productPromise);
-    // console.log(products);
+const ProductGallary = ({products, selected, setSelected}) => {
     const [tab, setTab] = useState("product");
-    const [selected, setSelected] = useState([]);
 
     return (
         <div className='w-[95%] md:max-w-300 mx-auto mb-20'>
@@ -23,7 +20,7 @@ const ProductGallary = ({productPromise}) => {
                     </button>
                     <button onClick={() => setTab("cart")}
                         className={`btn ${tab === 'cart' ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : "rounded-l-none border-none"} btn-sm md:btn-md rounded-3xl hover:bg-transparent`}>
-                        Cart ()
+                        Cart ({selected.length})
                     </button>
                 </div>
             </div>
